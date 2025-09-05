@@ -1,0 +1,26 @@
+# SDCC files
+*.asm
+*.lst
+*.mem
+*.rel
+*.rst
+*.sym
+*.adb
+*.lk
+*.map
+*.mem
+*.ihx
+*.hex
+*.bin
+
+# macOS
+.DS_Store
+
+# VScode
+.vscode
+
+# Font files
+*.ttf
+
+# Python Virtual Environment
+.venv/
