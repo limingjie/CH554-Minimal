@@ -1,35 +1,36 @@
 # Minimal CH55x Project
 
 - [Minimal CH55x Project](#minimal-ch55x-project)
-  - [Minimal Circuit](#minimal-circuit)
+  - [Circuit](#circuit)
   - [Run This Minimal Project on macOS](#run-this-minimal-project-on-macos)
   - [CH55x Pinout](#ch55x-pinout)
   - [CH55x Documents](#ch55x-documents)
   - [References](#references)
   - [License](#license)
 
-## Minimal Circuit
+## Circuit
 
 ![CH552T Minimal Circuit](./Images/CH552T%20Minimal%20Circuit.png)
 
+**Notes:**
+
+1. `P3.6` and `P3.7` internally use V33 as I/O power, **so the high level of the input and output can only reach the voltage V33, and 5V is NOT supported**.
+2. The USB transceiver is designed built-in based on USB2.0. **The `P3.6` pin and the `P3.7` pin CANNOT be connected to resistors in series when they are used for USB.**
+
 |  No.   | Component                 | Quantity | Notes                                                |
-| :----: | ------------------------- | :------: | ---------------------------------------------------- |
-| **1**  | CH552T                    |    1     | Other package variants of CH551/2/4 can also be used |
-| **2**  | TSSOP-20 Breakout Board   |    1     | 0.65 mm pitch                                        |
-| **3**  | USB Type-C Breakout Board |    1     | Requires D+ and D-                                   |
-| **4**  | 100 nF Capacitor          |    2     | Ceramic, used as bypass capacitor for MCU            |
-| **5**  | 1 kΩ Resistor             |    1     | For LED                                              |
-| **6**  | 5.1 kΩ Resistor           |    2     | USB CC1/CC2 pull-down resistor                       |
-| **7**  | 10 kΩ Resistor            |    1     | D+ pull-up resistor                                  |
-| **8**  | 3 mm Red LED              |    1     |                                                      |
-| **9**  | Push Button               |    2     |                                                      |
-| **10** | Pin Header                |   1x24   |                                                      |
-| **11** | Jump Wire (2 mm)          |    1     |                                                      |
-| **12** | Jump Wire (5 mm)          |    4     |                                                      |
-| **13** | Jump Wire (7 mm)          |    4     |                                                      |
-| **14** | Jump Wire (20 mm)         |    2     |                                                      |
-| **15** | Jump Wire (22 mm)         |    1     |                                                      |
-| **16** | Jump Wire (25 mm)         |    1     |                                                      |
+| :----: | ------------------------- | -------: | ---------------------------------------------------- |
+| **1**  | CH552T                    |        1 | Other package variants of CH551/2/4 can also be used |
+| **2**  | TSSOP-20 Breakout Board   |        1 | 0.65 mm pitch                                        |
+| **3**  | USB Type-C Breakout Board |        1 | Requires `D+` and `D-` to upload program to CH552    |
+| **4**  | 100 nF Capacitor          |        2 | Ceramic, used as bypass capacitor for MCU            |
+| **5**  | 1 kΩ Resistor             |        1 | For LED                                              |
+| **6**  | 5.1 kΩ Resistor           |        2 | USB `CC1`/`CC2` pull-down resistor                   |
+| **7**  | 10 kΩ Resistor            |        1 | `D+` pull-up resistor                                |
+| **8**  | 3 mm Red LED              |        1 |                                                      |
+| **9**  | Push Button               |        2 |                                                      |
+| **10** | Pin Header                |       24 |                                                      |
+| **11** | Breadboard                |        1 |                                                      |
+| **12** | Jump Wires                |        - |                                                      |
 
 ## Run This Minimal Project on macOS
 
