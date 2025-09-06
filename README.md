@@ -3,7 +3,7 @@
 - [Minimal CH55x Project](#minimal-ch55x-project)
   - [Circuit](#circuit)
   - [Run This Minimal Project on macOS](#run-this-minimal-project-on-macos)
-  - [CH55x Pinout](#ch55x-pinout)
+  - [CH552/CH554 Pinouts](#ch552ch554-pinouts)
   - [CH55x Documents](#ch55x-documents)
   - [References](#references)
   - [License](#license)
@@ -95,9 +95,11 @@
     make flash
     ```
 
-## CH55x Pinout
+## CH552/CH554 Pinouts
 
-![CH552/4G Pinout](./Images/CH552G_CH554G_Pinout.png)
+![CH55xG_Pinout](Images/CH55xT_Pinout.png)
+![CH55xT_Pinout](Images/CH55xG_Pinout.png)
+![CH55xE_Pinout](Images/CH55xE_Pinout.png)
 
 ## CH55x Documents
 
